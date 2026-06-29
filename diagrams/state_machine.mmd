@@ -1,0 +1,7 @@
+stateDiagram-v2
+    [*] --> Idle
+    Idle --> TapCooldown: tap_score 达标 / Tap
+    TapCooldown --> Idle: score <= reset_threshold 连续N帧
+    Idle --> Holding: hold_start_score 达标 / KeyDown
+    Holding --> TapCooldown: tail_score 达标 或目标丢失超限 / KeyUp
+    Holding --> Holding: 长条仍有效 / 保持按下

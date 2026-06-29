@@ -1,0 +1,10 @@
+flowchart LR
+    A[Windows 屏幕/窗口采集] --> B[FrameBuffer]
+    B --> C[VisionService<br/>HSV分割/几何检测/模板匹配]
+    C --> D[TimingEngine<br/>短按/长按状态机/提前量]
+    D --> E[InputService<br/>SendInput/Dry-run]
+    C --> F[Debug Overlay<br/>候选框/分数/状态]
+    D --> G[Event Logger<br/>CSV/JSON]
+    H[Config/Profile<br/>ROI/阈值/按键映射] --> C
+    H --> D
+    I[Calibration Wizard] --> H

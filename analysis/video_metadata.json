@@ -1,0 +1,9 @@
+{
+  "source_video": "video_1782739957535_m_compressed.mp4",
+  "width": 1280,
+  "height": 694,
+  "fps": 30.0,
+  "frame_count": 3231,
+  "duration_s": 107.7,
+  "analysis_precision_note": "录屏为30FPS，离线样例时间精度约为±33ms；正式工具建议60/120FPS实时采集。"
+}

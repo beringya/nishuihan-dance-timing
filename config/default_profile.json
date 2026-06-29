@@ -1,0 +1,64 @@
+{
+  "profile_name": "video_1280x694_initial_profile",
+  "created_from": "video_1782739957535_m_compressed.mp4",
+  "intended_use": "自有软件/训练/辅助功能/测试场景的视觉时机识别；不包含绕过平台限制或反作弊的设计。",
+  "screen": {
+    "source_width": 1280,
+    "source_height": 694,
+    "capture_fps_target": 120,
+    "video_analysis_fps": 30,
+    "global_roi": [0, 0, 1280, 694],
+    "default_prompt_roi": [120, 60, 1040, 600]
+  },
+  "capture": {
+    "windows_preferred_backend": "WindowsGraphicsCapture",
+    "fallback_backend": "DXGI Desktop Duplication",
+    "prototype_backend": "OpenCV video / mss",
+    "resize_for_detection": null,
+    "use_gpu_for_vision": false
+  },
+  "vision": {
+    "gold_hsv_lower": [13, 50, 70],
+    "gold_hsv_upper": [45, 255, 255],
+    "bright_gold_hsv_lower": [18, 80, 145],
+    "bright_gold_hsv_upper": [42, 255, 255],
+    "circle_radius_range_px": [18, 62],
+    "circle_min_area_px": 260,
+    "tap_ring_radius_tolerance_px": 5,
+    "tap_center_distance_tolerance_px": 8,
+    "hold_bar_min_height_px": 45,
+    "hold_bar_aspect_ratio_min": 2.1,
+    "letter_match_min_score": 0.62,
+    "consecutive_frames_confirm": 2
+  },
+  "timing": {
+    "tap_down_duration_ms": 35,
+    "input_advance_ms_default": 22,
+    "debounce_ms": 120,
+    "hold_down_score_threshold": 0.80,
+    "hold_up_tail_score_threshold": 0.74,
+    "reset_score_threshold": 0.38,
+    "score_hysteresis": 0.10,
+    "max_missing_frames_while_holding": 3
+  },
+  "keys": {
+    "A": {"enabled": true, "type": "tap_or_hold", "template": "templates/key_button_raw/hold_A_button_raw.png"},
+    "S": {"enabled": true, "type": "tap_or_hold", "template": "templates/key_button_raw/hold_S_button_raw.png"},
+    "W": {"enabled": true, "type": "tap_or_hold", "template": "templates/key_button_raw/hold_W_button_raw.png"},
+    "D": {"enabled": true, "type": "tap_or_hold", "template": "templates/key_button_raw/hold_D_button_raw.png"},
+    "Q": {"enabled": true, "type": "hold", "template": "templates/key_button_raw/hold_Q_button_raw.png"},
+    "E": {"enabled": true, "type": "tap", "template": "templates/key_button_raw/tap_E_ring_raw.png"},
+    "SPACE": {"enabled": true, "type": "tap", "template": "templates/key_button_raw/tap_space_icon_raw.png"}
+  },
+  "ui": {
+    "show_overlay_default": true,
+    "show_scores": true,
+    "show_roi_boxes": true,
+    "event_log_retention": 2000
+  },
+  "logging": {
+    "level": "INFO",
+    "write_event_csv": true,
+    "write_debug_frames": false
+  }
+}

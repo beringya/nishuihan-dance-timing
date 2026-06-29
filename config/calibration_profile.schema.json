@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KeyTimingAssist Calibration Profile",
+  "type": "object",
+  "required": ["profile_name", "screen", "vision", "timing", "keys"],
+  "properties": {
+    "profile_name": {"type": "string"},
+    "screen": {
+      "type": "object",
+      "required": ["source_width", "source_height", "capture_fps_target", "global_roi"],
+      "properties": {
+        "source_width": {"type": "integer"},
+        "source_height": {"type": "integer"},
+        "capture_fps_target": {"type": "integer"},
+        "global_roi": {"type": "array", "items": {"type": "integer"}, "minItems": 4, "maxItems": 4},
+        "default_prompt_roi": {"type": "array", "items": {"type": "integer"}, "minItems": 4, "maxItems": 4}
+      }
+    },
+    "vision": {"type": "object"},
+    "timing": {"type": "object"},
+    "keys": {"type": "object"}
+  }
+}

@@ -1,0 +1,548 @@
+{
+  "generated_from": "/mnt/data/video_1782739957535_m_compressed.mp4",
+  "video_fps": 30.0,
+  "video_size": [
+    1280,
+    694
+  ],
+  "templates": [
+    {
+      "file": "templates/full_prompt/hold_A_full.png",
+      "key": "A",
+      "kind": "hold_full",
+      "source_candidate": "cand_003_f15_t0.50_x502_y157.png",
+      "source_frame": 15,
+      "source_time_s": 0.5,
+      "source_crop_xy": [
+        502,
+        157
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/full_prompt/hold_Q_full.png",
+      "key": "Q",
+      "kind": "hold_full",
+      "source_candidate": "cand_033_f150_t5.00_x743_y157.png",
+      "source_frame": 150,
+      "source_time_s": 5.0,
+      "source_crop_xy": [
+        743,
+        157
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/full_prompt/hold_S_full.png",
+      "key": "S",
+      "kind": "hold_full",
+      "source_candidate": "cand_053_f225_t7.50_x382_y197.png",
+      "source_frame": 225,
+      "source_time_s": 7.5,
+      "source_crop_xy": [
+        382,
+        197
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/full_prompt/hold_W_full.png",
+      "key": "W",
+      "kind": "hold_full",
+      "source_candidate": "cand_093_f390_t13.00_x382_y197.png",
+      "source_frame": 390,
+      "source_time_s": 13.0,
+      "source_crop_xy": [
+        382,
+        197
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/full_prompt/hold_D_full.png",
+      "key": "D",
+      "kind": "hold_full",
+      "source_candidate": "cand_155_f630_t21.00_x701_y198.png",
+      "source_frame": 630,
+      "source_time_s": 21.0,
+      "source_crop_xy": [
+        701,
+        198
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/key_button_raw/tap_A_ring_raw.png",
+      "key": "A",
+      "kind": "tap_raw",
+      "source_candidate": "cand_013_f60_t2.00_x525_y212.png",
+      "source_frame": 60,
+      "source_time_s": 2.0,
+      "source_crop_xy": [
+        525,
+        212
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/letter_binary/A_letter_binary_from_tap_A_ring_raw.png",
+      "key": "A",
+      "kind": "letter_binary",
+      "source_candidate": "cand_013_f60_t2.00_x525_y212.png",
+      "source_frame": 60,
+      "source_time_s": 2.0,
+      "source_crop_xy": [
+        525,
+        212
+      ],
+      "notes": "用于小范围模板匹配的白字二值模板，需要按实际分辨率再标定。"
+    },
+    {
+      "file": "templates/key_button_raw/tap_S_ring_raw.png",
+      "key": "S",
+      "kind": "tap_raw",
+      "source_candidate": "cand_052_f225_t7.50_x496_y298.png",
+      "source_frame": 225,
+      "source_time_s": 7.5,
+      "source_crop_xy": [
+        496,
+        298
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/letter_binary/S_letter_binary_from_tap_S_ring_raw.png",
+      "key": "S",
+      "kind": "letter_binary",
+      "source_candidate": "cand_052_f225_t7.50_x496_y298.png",
+      "source_frame": 225,
+      "source_time_s": 7.5,
+      "source_crop_xy": [
+        496,
+        298
+      ],
+      "notes": "用于小范围模板匹配的白字二值模板，需要按实际分辨率再标定。"
+    },
+    {
+      "file": "templates/key_button_raw/tap_W_ring_raw.png",
+      "key": "W",
+      "kind": "tap_raw",
+      "source_candidate": "cand_037_f180_t6.00_x734_y263.png",
+      "source_frame": 180,
+      "source_time_s": 6.0,
+      "source_crop_xy": [
+        734,
+        263
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/letter_binary/W_letter_binary_from_tap_W_ring_raw.png",
+      "key": "W",
+      "kind": "letter_binary",
+      "source_candidate": "cand_037_f180_t6.00_x734_y263.png",
+      "source_frame": 180,
+      "source_time_s": 6.0,
+      "source_crop_xy": [
+        734,
+        263
+      ],
+      "notes": "用于小范围模板匹配的白字二值模板，需要按实际分辨率再标定。"
+    },
+    {
+      "file": "templates/key_button_raw/tap_D_ring_raw.png",
+      "key": "D",
+      "kind": "tap_raw",
+      "source_candidate": "cand_007_f45_t1.50_x777_y339.png",
+      "source_frame": 45,
+      "source_time_s": 1.5,
+      "source_crop_xy": [
+        777,
+        339
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/letter_binary/D_letter_binary_from_tap_D_ring_raw.png",
+      "key": "D",
+      "kind": "letter_binary",
+      "source_candidate": "cand_007_f45_t1.50_x777_y339.png",
+      "source_frame": 45,
+      "source_time_s": 1.5,
+      "source_crop_xy": [
+        777,
+        339
+      ],
+      "notes": "用于小范围模板匹配的白字二值模板，需要按实际分辨率再标定。"
+    },
+    {
+      "file": "templates/key_button_raw/tap_E_ring_raw.png",
+      "key": "E",
+      "kind": "tap_raw",
+      "source_candidate": "cand_086_f375_t12.50_x697_y340.png",
+      "source_frame": 375,
+      "source_time_s": 12.5,
+      "source_crop_xy": [
+        697,
+        340
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/letter_binary/E_letter_binary_from_tap_E_ring_raw.png",
+      "key": "E",
+      "kind": "letter_binary",
+      "source_candidate": "cand_086_f375_t12.50_x697_y340.png",
+      "source_frame": 375,
+      "source_time_s": 12.5,
+      "source_crop_xy": [
+        697,
+        340
+      ],
+      "notes": "用于小范围模板匹配的白字二值模板，需要按实际分辨率再标定。"
+    },
+    {
+      "file": "templates/key_button_raw/hold_Q_button_raw.png",
+      "key": "Q",
+      "kind": "button_raw",
+      "source_candidate": "cand_033_f150_t5.00_x743_y157.png",
+      "source_frame": 150,
+      "source_time_s": 5.0,
+      "source_crop_xy": [
+        743,
+        157
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/letter_binary/Q_letter_binary_from_hold_Q_button_raw.png",
+      "key": "Q",
+      "kind": "letter_binary",
+      "source_candidate": "cand_033_f150_t5.00_x743_y157.png",
+      "source_frame": 150,
+      "source_time_s": 5.0,
+      "source_crop_xy": [
+        743,
+        157
+      ],
+      "notes": "用于小范围模板匹配的白字二值模板，需要按实际分辨率再标定。"
+    },
+    {
+      "file": "templates/key_button_raw/hold_A_button_raw.png",
+      "key": "A",
+      "kind": "button_raw",
+      "source_candidate": "cand_003_f15_t0.50_x502_y157.png",
+      "source_frame": 15,
+      "source_time_s": 0.5,
+      "source_crop_xy": [
+        502,
+        157
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/letter_binary/A_letter_binary_from_hold_A_button_raw.png",
+      "key": "A",
+      "kind": "letter_binary",
+      "source_candidate": "cand_003_f15_t0.50_x502_y157.png",
+      "source_frame": 15,
+      "source_time_s": 0.5,
+      "source_crop_xy": [
+        502,
+        157
+      ],
+      "notes": "用于小范围模板匹配的白字二值模板，需要按实际分辨率再标定。"
+    },
+    {
+      "file": "templates/key_button_raw/hold_S_button_raw.png",
+      "key": "S",
+      "kind": "button_raw",
+      "source_candidate": "cand_053_f225_t7.50_x382_y197.png",
+      "source_frame": 225,
+      "source_time_s": 7.5,
+      "source_crop_xy": [
+        382,
+        197
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/letter_binary/S_letter_binary_from_hold_S_button_raw.png",
+      "key": "S",
+      "kind": "letter_binary",
+      "source_candidate": "cand_053_f225_t7.50_x382_y197.png",
+      "source_frame": 225,
+      "source_time_s": 7.5,
+      "source_crop_xy": [
+        382,
+        197
+      ],
+      "notes": "用于小范围模板匹配的白字二值模板，需要按实际分辨率再标定。"
+    },
+    {
+      "file": "templates/key_button_raw/hold_W_button_raw.png",
+      "key": "W",
+      "kind": "button_raw",
+      "source_candidate": "cand_093_f390_t13.00_x382_y197.png",
+      "source_frame": 390,
+      "source_time_s": 13.0,
+      "source_crop_xy": [
+        382,
+        197
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/letter_binary/W_letter_binary_from_hold_W_button_raw.png",
+      "key": "W",
+      "kind": "letter_binary",
+      "source_candidate": "cand_093_f390_t13.00_x382_y197.png",
+      "source_frame": 390,
+      "source_time_s": 13.0,
+      "source_crop_xy": [
+        382,
+        197
+      ],
+      "notes": "用于小范围模板匹配的白字二值模板，需要按实际分辨率再标定。"
+    },
+    {
+      "file": "templates/key_button_raw/hold_D_button_raw.png",
+      "key": "D",
+      "kind": "button_raw",
+      "source_candidate": "cand_155_f630_t21.00_x701_y198.png",
+      "source_frame": 630,
+      "source_time_s": 21.0,
+      "source_crop_xy": [
+        701,
+        198
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/letter_binary/D_letter_binary_from_hold_D_button_raw.png",
+      "key": "D",
+      "kind": "letter_binary",
+      "source_candidate": "cand_155_f630_t21.00_x701_y198.png",
+      "source_frame": 630,
+      "source_time_s": 21.0,
+      "source_crop_xy": [
+        701,
+        198
+      ],
+      "notes": "用于小范围模板匹配的白字二值模板，需要按实际分辨率再标定。"
+    },
+    {
+      "file": "templates/key_button_raw/tap_space_icon_raw.png",
+      "key": "SPACE",
+      "kind": "icon_raw",
+      "source_candidate": "cand_012_f60_t2.00_x715_y346.png",
+      "source_frame": 60,
+      "source_time_s": 2.0,
+      "source_crop_xy": [
+        715,
+        346
+      ],
+      "notes": "从用户录屏抽帧生成的初始模板，生产使用时建议通过标定向导重新采集。"
+    },
+    {
+      "file": "templates/letter_gray/hold_A_button_raw_letter_gray.png",
+      "key": "A",
+      "kind": "letter_gray",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_gray/hold_D_button_raw_letter_gray.png",
+      "key": "D",
+      "kind": "letter_gray",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_gray/hold_Q_button_raw_letter_gray.png",
+      "key": "Q",
+      "kind": "letter_gray",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_gray/hold_S_button_raw_letter_gray.png",
+      "key": "S",
+      "kind": "letter_gray",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_gray/hold_W_button_raw_letter_gray.png",
+      "key": "W",
+      "kind": "letter_gray",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_gray/tap_A_ring_raw_letter_gray.png",
+      "key": "A",
+      "kind": "letter_gray",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_gray/tap_D_ring_raw_letter_gray.png",
+      "key": "D",
+      "kind": "letter_gray",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_gray/tap_E_ring_raw_letter_gray.png",
+      "key": "E",
+      "kind": "letter_gray",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_gray/tap_S_ring_raw_letter_gray.png",
+      "key": "S",
+      "kind": "letter_gray",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_gray/tap_W_ring_raw_letter_gray.png",
+      "key": "W",
+      "kind": "letter_gray",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_edge/hold_A_button_raw_letter_edge.png",
+      "key": "A",
+      "kind": "letter_edge",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_edge/hold_D_button_raw_letter_edge.png",
+      "key": "D",
+      "kind": "letter_edge",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_edge/hold_Q_button_raw_letter_edge.png",
+      "key": "Q",
+      "kind": "letter_edge",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_edge/hold_S_button_raw_letter_edge.png",
+      "key": "S",
+      "kind": "letter_edge",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_edge/hold_W_button_raw_letter_edge.png",
+      "key": "W",
+      "kind": "letter_edge",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_edge/tap_A_ring_raw_letter_edge.png",
+      "key": "A",
+      "kind": "letter_edge",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_edge/tap_D_ring_raw_letter_edge.png",
+      "key": "D",
+      "kind": "letter_edge",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_edge/tap_E_ring_raw_letter_edge.png",
+      "key": "E",
+      "kind": "letter_edge",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_edge/tap_S_ring_raw_letter_edge.png",
+      "key": "S",
+      "kind": "letter_edge",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    },
+    {
+      "file": "templates/letter_edge/tap_W_ring_raw_letter_edge.png",
+      "key": "W",
+      "kind": "letter_edge",
+      "source_candidate": null,
+      "source_frame": null,
+      "source_time_s": null,
+      "source_crop_xy": null,
+      "notes": "由 key_button_raw 自动生成的轻量字母模板；优先用于小范围模板匹配。"
+    }
+  ]
+}

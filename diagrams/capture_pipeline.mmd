@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant Cap as CaptureService
+    participant Vis as VisionService
+    participant Tim as TimingEngine
+    participant Inp as InputService
+    participant UI as UI/Overlay
+    Cap->>Vis: Frame + timestamp
+    Vis->>Vis: ROI裁剪 + HSV金色mask
+    Vis->>Vis: 圆/外圈/长条/尾端检测
+    Vis->>Tim: KeySignal(key, score, predicted_ms_to_hit)
+    Tim->>Inp: KeyDown / KeyUp / Tap
+    Tim->>UI: 状态、分数、事件
